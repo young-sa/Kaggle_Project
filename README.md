@@ -2,7 +2,7 @@
 
 # Predict Heath Outcomes of Horses
 
-*This repository holds an attempt to train a model using machine learning that applies prediction outcome algorithms to determine whether a horse lived or died. Kaggle challenge: https://www.kaggle.com/competitions/playground-series-s3e22/overview 
+This repository holds an attempt to train a model using machine learning that applies prediction outcome algorithms to determine whether a horse lived or died. Kaggle challenge: https://www.kaggle.com/competitions/playground-series-s3e22/overview 
 
 ## Overview
 
