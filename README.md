@@ -6,19 +6,17 @@ This repository holds an attempt to train a model using machine learning that ap
 
 ## Overview
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use the given various medical indicators to predict the health outcomes of horses.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+The task, as defined by the Kaggle challenge is to use the given various medical indicators to predict the health outcomes of horses.The approach in this repository formulates the problem as a multi binary classification task, using different classification methods like LGBMClassifier, Random Forest. The performance of each was compared between the different methods. The best model was able to predict the health outcome with a 67% accuracy.
 
-## Summary of Workdone
-
-Include only the sections that are relevant an appropriate.
 
 ### Data
 
 * Data:
-  * Type: For example
+ * Train.csv consisted of 1235 rows and 29 columns.
+ * Test.csv
+  * Number of rows: 824
+  * Number of columns: 28
+
     * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
     * Input: CSV file of features, output: signal/background flag in 1st column.
   * Size: How much data?
