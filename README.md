@@ -1,9 +1,8 @@
 ![](UTA-DataScience-Logo.png)
 
-# Predict Heath Outcomes for Horses
+# Predict Heath Outcomes of Horses
 
-* **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
-"Get Rich" Kaggle challenge (provide link). 
+* **One Sentence Summary** Ex: This repository holds an attempt to train a model using machine learning that applies prediction outcome algorithms to determine whether a horse lived or died. Kaggle challenge: https://www.kaggle.com/competitions/playground-series-s3e22/overview 
 
 ## Overview
 
@@ -97,7 +96,7 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Data
 
-* Point to where they can download the data.
+* Data can be downloaded from: https://www.kaggle.com/competitions/playground-series-s3e22/overview
 * Lead them through preprocessing steps, if necessary.
 
 ### Training
