@@ -13,9 +13,7 @@ The task, as defined by the Kaggle challenge is to use the given various medical
 
 * Data:
  * Train.csv consisted of 1235 rows and 29 columns.
- * Test.csv
-  * Number of rows: 824
-  * Number of columns: 28
+ * Test.csv consisted of 824 rows and 28 columns.
 
     * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
     * Input: CSV file of features, output: signal/background flag in 1st column.
