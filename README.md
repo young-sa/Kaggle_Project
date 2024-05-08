@@ -24,6 +24,9 @@ The task, as defined by the Kaggle challenge is to use the given various medical
    * Numerical Columns: Impute missing values with the median.
    * Categorical Columns: Impute missing values with the most frequent value (mode) or use a placeholder like 'Unknown'.
 * One-hot encoding used to convert categorical variables to numerical, for better machine learning.
+* Used Min-Max scaling:
+   * Since the numerical features in the dataset have unknown distributions, Min-Max scaling provides a consistent range.
+   * Also, brings all features into the same range (0 to 1), ensuring that no feature dominates the learning process due to larger scales.
 
 #### Data Visualization
 
