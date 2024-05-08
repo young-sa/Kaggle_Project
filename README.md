@@ -2,11 +2,11 @@
 
 # Predict Heath Outcomes of Horses
 
-This repository holds an attempt to train a model using machine learning that applies prediction outcome algorithms to determine whether a horse lived or died. Kaggle challenge: https://www.kaggle.com/competitions/playground-series-s3e22/overview 
+This repository holds an attempt to train a model using machine learning that applies prediction outcome algorithms to determine whether a horse lived, died, or euthanized. Kaggle challenge: https://www.kaggle.com/competitions/playground-series-s3e22/overview 
 
 ## Overview
 
-The task, as defined by the Kaggle challenge is to use the given various medical indicators to predict the health outcomes of horses.The approach in this repository formulates the problem as a multi binary classification task, using different classification methods like LGBMClassifier, Random Forest. The performance of each was compared between the different methods. The best model was able to predict the health outcome with a 67% accuracy.
+The task, as defined by the Kaggle challenge is to use the given various medical indicators to predict the health outcomes of horses.The approach in this repository formulates the problem as a multi binary classification task, using different classification methods of machine learning like LGBMClassifier, Random Forest. The performance of each was compared between the different methods. The best model was able to predict the health outcome with a 67% accuracy.
 
 
 ### Data
