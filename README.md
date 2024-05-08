@@ -6,7 +6,7 @@ This repository holds an attempt to train a model using machine learning that ap
 
 ## Overview
 
-The task, as defined by the Kaggle challenge is to use the given various medical indicators to predict the health outcomes of horses.The approach in this repository formulates the problem as a multi binary classification task, using different classification methods of machine learning like LGBMClassifier, Random Forest. The performance of each was compared between the different methods. The best model was able to predict the health outcome with a 67% accuracy.
+The task, as defined by the Kaggle challenge is to use the given various medical indicators to predict the health outcomes of horses.The approach in this repository formulates the problem as a multi binary classification task, using different classification methods of machine learning like Linear Regression and Random Forest. The performance of each was compared between the different methods. The best model, linear regression, was able to predict the health outcome with a 68.41% accuracy.
 
 
 ### Data
@@ -55,29 +55,41 @@ Shown is the outcomes (lived, died, and euthanized) for each variable in the dat
 ### Problem Formulation
 
 * Define:
-  * Input / Output
   * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+    * Linear Regression:
+       * Logistic Regression was used because it is a simple yet powerful baseline model for classification tasks and the One-vs-Rest strategy ensured effective multiclass classification.
+    * Random Forest:
+       * Random Forest can handle complex, non-linear relationships in the data and provides feature importance insights and is robust to outliers and missing values.
 
 ### Training
 
-* Describe the training:
-  * How you trained: software and hardware.
-  * How did training take.
-  * Training curves (loss vs epoch for test/train).
-  * How did you decide to stop training.
-  * Any difficulties? How did you resolve them?
+Training was difficult with the outcome column because it consisted of lived, died, and euthanized. I had to seperate them into their own columns, so that they could be assesed using the models. 
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+Overall Accuracy:
+* RandomForestClassifier:
+   * Validation accuracy of 65.41%.
+   * Higher recall on "died" class but lower precision for "euthanized."
+* LogisticRegression:
+   * Validation accuracy of 68.11%.
+   * Balanced performance across all classes.
+ 
+Class-Level Performance:
+* "Died" Class:
+   * Random Forest: Recall of 77% but lower precision at 60%.
+   * Logistic Regression: Better balance with 75% recall and 67% precision.
+* "Euthanized" Class:
+   * (Both models struggled with "Euthanized" due to class imbalance.)
+   * Random Forest: Recall of 47% and precision of 64%.
+   * Logistic Regression: Similar recall (47%) but lower precision (64% vs. 55%).
+* "Lived" Class:
+   * Random Forest: Recall of 65% and precision of 71%.
+   * Logistic Regression: Higher recall at 76% and precision at 74%.
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+Logistic Regression outperformed Random Forest in this dataset, achieving better overall accuracy and balanced performance across classes. Random Forest was useful for understanding feature importance and handling non-linear relationships, however, struggled due to class imbalance and did not generalize as well as Logistic Regression. Further improvements could be made through hyperparameter tuning, cross-validation, or using ensemble methods.
 
 ### Future Work
 
@@ -124,9 +136,6 @@ Relevent Files:
 * Describe how to run the performance evaluation.
 
 
-## Citations
-
-* Provide any references.
 
 
 
