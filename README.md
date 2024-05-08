@@ -86,6 +86,8 @@ Class-Level Performance:
 * "Lived" Class:
    * Random Forest: Recall of 65% and precision of 71%.
    * Logistic Regression: Higher recall at 76% and precision at 74%.
+ 
+  ![](im8.png) 
 
 ### Conclusions
 
