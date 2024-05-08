@@ -27,7 +27,7 @@ The task, as defined by the Kaggle challenge is to use the given various medical
 #### Data Visualization
 
 Show a few visualization of the data and say a few words about what you see.
-![](kaggle_images.pdf) 
+![](im1.png) 
 
 ### Problem Formulation
 
