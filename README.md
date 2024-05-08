@@ -14,10 +14,8 @@ The task, as defined by the Kaggle challenge is to use the given various medical
 * Data:
  * Train.csv consisted of 1235 rows and 29 columns.
  * Test.csv consisted of 824 rows and 28 columns.
-
     * Input: horse health, CSV file: filename -> train.csv
     * Output: lived/died/euthanized within outcome variable.
-  * Size: How much data?
   * Instances (Train, Test, Validation Split): 1235 for training, 824 for testing, none for validation
 
 #### Preprocessing / Clean up
