@@ -15,14 +15,17 @@ The task, as defined by the Kaggle challenge is to use the given various medical
  * Train.csv consisted of 1235 rows and 29 columns.
  * Test.csv consisted of 824 rows and 28 columns.
 
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
+    * Input: horse health, CSV file: filename -> train.csv
+    * Output: lived/died/euthanized within outcome variable.
   * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+  * Instances (Train, Test, Validation Split): 1235 for training, 824 for testing, none for validation
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+* Identified any missing and/or duplicate variables.
+   * Numerical Columns: Impute missing values with the median.
+   * Categorical Columns: Impute missing values with the most frequent value (mode) or use a placeholder like 'Unknown'.
+* One-hot encoding used to convert categorical variables to numerical, for better machine learning.
 
 #### Data Visualization
 
