@@ -63,8 +63,21 @@ Shown is the outcomes (lived, died, and euthanized) for each variable in the dat
 
 ### Training
 
-Training was difficult with the outcome column because it consisted of lived, died, and euthanized. I had to seperate them into their own columns, so that they could be assesed using the models. 
+Software:
+      * Programming Language: Python 3.10
+   * Key Libraries:
+      * sklearn: For machine learning models (Random Forest, Logistic Regression)
+      * pandas: For data manipulation and analysis
+      * matplotlib for visualization
+Hardware:
+   * Processor: Intel Core i7 (4 cores)
+   * RAM: 16GB
+   * Storage: SSD
+Training Time
+   * Random Forest Training time: ~2 seconds
+   * Logistic Regression Training time: ~3 seconds
 
+I handled missing values (numerical: median, categorical: mode). One-hot encoded categorical variables. Standardized numerical features using StandardScaler and MinMaxScaler. Split into training, validation, and test sets using train_test_split. Training was difficult with the outcome column because it consisted of lived, died, and euthanized. I had to seperate them into their own columns, so that they could be assesed using the models. Additionally, it was difficult because there was multi-label targets required conversion for certain models so had to use .idxmax() to convert to single-label format. Because of this though, there was incompatibility between multi-label targets and some models (e.g., Logistic Regression). So I had to use One-vs-Rest (ovr) for multiclass classification.
 ### Performance Comparison
 
 Overall Accuracy:
@@ -95,8 +108,7 @@ Logistic Regression outperformed Random Forest in this dataset, achieving better
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+I would've liked to improve the models. Like focus on hyperparameter tuning, feature engineering, and ensemble methods like model stacking or boosting. Further studies could explore deep learning models, predictive modeling for other animal diseases, and cost-effectiveness analysis for veterinary care. Additionally, enhancing interpretability using tools like SHAP and LIME (I looked it us) could provide valuable insights for practical applications such as this.
 
 ## How to reproduce results
 
@@ -135,12 +147,8 @@ Relevent Files:
 
 #### Performance Evaluation
 
-* Describe how to run the performance evaluation.
-
-
-
-
-
+* Make sure test set consists of same format ar the train set.
+* Compared prediction models and made a dataframe that compared those predictions.
 
 
 
