@@ -26,9 +26,14 @@ The task, as defined by the Kaggle challenge is to use the given various medical
 
 #### Data Visualization
 
-Show a few visualization of the data and say a few words about what you see.
+Shown is the outcomes (lived, died, and euthanized) for each variable in the data set.
 ![](im1.png) 
 ![](im2.png) 
+![](im3.png) 
+![](im4.png) 
+![](im5.png) 
+![](im6.png) 
+![](im7.png) 
 
 ### Problem Formulation
 
