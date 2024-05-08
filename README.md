@@ -16,7 +16,17 @@ The task, as defined by the Kaggle challenge is to use the given various medical
  * Test.csv consisted of 824 rows and 28 columns.
     * Input: horse health, CSV file: filename -> train.csv
     * Output: lived/died/euthanized within outcome variable.
-  * Instances (Train, Test, Validation Split): 1235 for training, 824 for testing, none for validation
+  * Instances (Train, Test, Validation Split): 
+     * Training Set: 70% of the total data
+         * Features: 864 samples, 10 columns
+         * Targets: 864 samples, 3 classes
+      * Test Set: 15% of the total data
+         * Features: 186 samples, 10 columns
+         * Targets: 186 samples, 3 classes
+      * Validation Set: 15% of the total data
+         * Features: 185 samples, 10 columns
+         * Targets: 185 samples, 3 classes
+
 
 #### Preprocessing / Clean up
 
